@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="tf" type="static_transform_publisher" name="link_laser" args="0.0 0.0 0.0 0.0 0.0 0.0 fixed_frame map 1000" />
+	<node name="rviz" pkg="rviz" type="rviz" />
+	<node pkg="nearest_object_follower" type="nearest_object_follower" name="nearest_object_follower" output="screen" />
+
+</launch>
